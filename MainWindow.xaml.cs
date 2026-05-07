@@ -84,5 +84,15 @@ namespace silly
             }
             btnClick.IsEnabled = true;
         }
+
+        private async void showKonosubaGif(object sender, RoutedEventArgs e)
+        {
+            while ((bool)checkKonosuba.IsChecked)
+            {
+                KonosubaGif.Opacity = 1;
+                    await Task.Delay(1);
+            }
+            KonosubaGif.Opacity = 0;
+        }
     }
 }

@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:silly"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
         mc:Ignorable="d"
         MouseMove="MoveImage"
         Loaded="FadeIn"
@@ -24,6 +25,8 @@
             </Label.Effect>
         </Label>
         <Button x:Name="btnClick" HorizontalAlignment="Center" VerticalAlignment="Center" Content="click me :3" FontSize="16" Click="btnClick_Click" Background="White" BorderBrush="Gray" Width="101" Height="35"></Button>
-        <CheckBox x:Name="checkMousePos" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" Content="get mouse pos" Foreground="White" BorderBrush="Gray" Margin="0,100,0,0" Checked="startPosRelay"></CheckBox>
+        <CheckBox x:Name="checkMousePos" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" Content="get mouse pos" Foreground="White" BorderBrush="Gray" Margin="0,100,150,0" Checked="startPosRelay"></CheckBox>
+        <Image x:Name="KonosubaGif" gif:ImageBehavior.AnimatedSource="/output.gif" Opacity="0" Stretch="UniformToFill" HorizontalAlignment="Left" Width="480" Margin="65,290,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="checkKonosuba" VerticalAlignment="Center" FontSize="16" Content="konosuba" Foreground="White" BorderBrush="Gray" Margin="150,100,0,0" Checked="showKonosubaGif" HorizontalAlignment="Center"/>
     </Grid>
 </Window>
