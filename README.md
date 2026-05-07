@@ -12,6 +12,8 @@ wei
 
 - it can fade in and out
 
+- konosuba gif
+
 riveting features, i know
 
 ## anime girl in the background
