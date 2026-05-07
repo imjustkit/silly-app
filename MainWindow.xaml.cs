@@ -31,6 +31,14 @@ namespace silly
             InitializeComponent();
         }
 
+        private void keyPress(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Escape)
+            {
+                this.Close();
+            }
+        }
+
         private void FadeIn(object sender, RoutedEventArgs e)
         {
             Loaded -= FadeIn;
@@ -67,13 +75,14 @@ namespace silly
 
         private async void startPosRelay(object sender, RoutedEventArgs e)
         {
+            btnClick.IsEnabled = false;
             while ((bool)checkMousePos.IsChecked)
             {
                 Point mousePos = Mouse.GetPosition(this);
                 lblMessage.Content = $"Mouse Position: {mousePos.X}, {mousePos.Y}";
                 await Task.Delay(1);
             }
-            
+            btnClick.IsEnabled = true;
         }
     }
 }

@@ -8,6 +8,7 @@
         MouseMove="MoveImage"
         Loaded="FadeIn"
         Closing="FadeOut"
+        KeyUp="keyPress"
         Title="silly" Height="480" Width="640" Icon="/icon.jpg" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True" Background="#00000000">
     <Grid>
         <Canvas Background="Black">
